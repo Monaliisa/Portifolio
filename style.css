@@ -44,7 +44,8 @@ header{
     text-shadow: .3 rem .4rem 2px rgba(0,0,0,.4);
     line-height: 3.5rem;
     margin-bottom: 2rem;
-    animation: moveBanner 1s forwards;
+    opacity:0;
+    animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p{
@@ -53,7 +54,7 @@ header{
     font-size: 2rem;
     text-shadow: .2rem .2rem rgba(0,0,0, .4);
     margin-bottom: 2rem;
-    animation: moveBanner 1s forwards;
+    animation: moveBanner 1s 0.7s forwards;
 
 }
 
@@ -69,7 +70,7 @@ header{
     border: none;
     border-radius: 5px;
     cursor:pointer;
-    animation: moveBanner 1s forwards;
+    animation: moveBanner 1s 0.9s forwards;
 }
 
 .banner button:hover{
@@ -89,11 +90,13 @@ header{
 
 @keyframes moveBanner{
     0%{
-        transform: translateY(10rems) rotateY(-30deg);        
+        transform: translateY(10rem) rotateY(-30deg);
     }
     100%{
+        opacity: 1;
         transform: translateY(0) rotateY(0);
     }
 }
+
 
 }
